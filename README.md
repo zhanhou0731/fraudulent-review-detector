@@ -21,6 +21,14 @@ This directory contains the production-ready code for both the interactive Strea
 * **`requirements.txt`**: Contains all dependencies to run both the Streamlit app and the API locally.
 * **`requirements-api.txt` & `Dockerfile`**: Specifically optimised for containerizing the API using a lightweight `python:3.10.11-slim` base image and CPU-only PyTorch for cost-effective industry deployment.
 
+
+---
+
+## ⚙️ Prerequisites
+To run this project locally without dependency conflicts, ensure your system meets the following requirement:
+* **Python Version:** `3.10.11` (Strictly recommended to ensure compatibility with the PyTorch CPU variant and Hugging Face Transformers).
+* **Docker:** Required only if you intend to build and run the containerized API (Part 3).
+
 ---
 
 ## Start Guide
