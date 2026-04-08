@@ -26,7 +26,7 @@ This directory contains the production-ready code for both the interactive Strea
 
 ## ⚙️ Prerequisites
 To run this project locally without dependency conflicts, ensure your system meets the following requirement:
-* **Python Version:** `3.10.11` (Strictly recommended to ensure compatibility with the PyTorch CPU variant and Hugging Face Transformers).
+* **Python Version:** `3.10.11` 
 * **Docker:** Required only if you intend to build and run the containerized API (Part 3).
 
 ---
