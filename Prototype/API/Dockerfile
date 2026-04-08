@@ -13,11 +13,12 @@ RUN pip install --no-cache-dir -r requirements-api.txt \
     -i https://mirrors.aliyun.com/pypi/simple/ \
     --extra-index-url https://download.pytorch.org/whl/cpu
 
-COPY config ./config/
+COPY config/ ./config/
 COPY services/ ./services/
 COPY models/ ./models/
 COPY utils/ ./utils/
-COPY api.py .
+
+COPY api/api.py ./api.py
 
 EXPOSE 8000
 CMD ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "8000"]

@@ -9,7 +9,9 @@ import sys
 import os
 import logging
 
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.abspath(os.path.join(CURRENT_DIR, ".."))
+sys.path.append(PROJECT_ROOT)
 from services.pipeline import FraudDetectionPipeline
 
 

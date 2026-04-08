@@ -19,7 +19,7 @@ This directory contains the entire machine learning lifecycle, from data preproc
 ### 2. `/Prototype` (Deployment & MLOps)
 This directory contains the production-ready code for both the interactive Streamlit GUI and the scalable FastAPI backend. 
 * **`requirements.txt`**: Contains all dependencies to run both the Streamlit app and the API locally.
-* **`requirements-api.txt` & `Dockerfile`**: Specifically optimised for containerizing the API using a lightweight `python:3.10.11-slim` base image and CPU-only PyTorch for cost-effective industry deployment.
+* **`API/requirements-api.txt` & `API/Dockerfile`**: Specifically optimised for containerizing the API using a lightweight `python:3.10.11-slim` base image and CPU-only PyTorch for cost-effective industry deployment.
 
 
 ---
@@ -51,7 +51,7 @@ The prototype provides a user-friendly GUI for real-time inference, batch proces
 
 ### Part 2: Running the API Locally (FastAPI)
 If you wish to run the backend API directly without Docker, you can use the built-in interactive launcher.
-1. Ensure you are in the Prototype folder and requirements are installed.
+1. Ensure you are in the API folder and requirements are installed.
 2. Run the API script:
    ```bash
    python api.py
@@ -69,7 +69,7 @@ The FastAPI backend is optimised to run as a headless, containerized service for
    ```
 2. Build the Docker image (this uses requirements-api.txt to minimise the container footprint):
    ```bash
-   docker build -t fraud-detection-api .
+   docker build -t fraud-detection-api -f api/Dockerfile .
    ```
 3. Run the Docker container:
    ```bash
