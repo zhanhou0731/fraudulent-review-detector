@@ -65,7 +65,7 @@ print(response.json())
 }
 ```
 
-#### 🔵 3. Batch Review Inference
+#### 3. Batch Review Inference
 * **Endpoint:** `POST /predict-batch`
 * **Description:** Analyzes multiple reviews in a single request. Highly optimized for processing `.csv` or tabular data.
 * **Request Body (JSON):**
