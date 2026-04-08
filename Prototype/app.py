@@ -4,7 +4,9 @@ from views import home, experiments, api_docs
 
 st.set_page_config(page_title="Fraudulent Review Detection", page_icon="🛡️", layout="wide")
 
-with open(os.path.join("assets", "style.css")) as f:
+BASE_DIR = os.path.dirname(__file__)
+css_path = os.path.join(BASE_DIR, "assets", "style.css")
+with open(css_path) as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 with st.sidebar:
