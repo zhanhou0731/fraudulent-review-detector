@@ -1,0 +1,2 @@
+hidden_layers,fusion_dim,dropout,lr,weight_decay
+1,64,0.3,0.0005,0.001

@@ -1,0 +1,2 @@
+learning_rate,max_depth,n_estimators,subsample,best_f1_score
+0.01,7,400,1.0,0.9832597795858502

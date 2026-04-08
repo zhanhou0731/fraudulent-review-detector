@@ -1,0 +1,44 @@
+/* Main Background */
+.stApp {
+    background-color: #DCDCDC;
+    color: black;
+}
+
+header[data-testid="stHeader"] {
+    background-color: transparent;
+}
+
+/* Sidebar Styling */
+section[data-testid="stSidebar"] {
+    background-color: #A9A9A9;
+}
+
+/* Custom Report Card */
+.report-card {
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #1F2937;
+    border-left: 6px solid #FF4B4B;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Metric Boxes*/
+.metric-box {
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #262730;
+    margin: 5px;
+    border: 1px solid #374151;
+}
+
+/* Header Styling */
+h1 {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    color: black;
+}
+
+button[kind="header"] {
+    display: none !important;
+}
